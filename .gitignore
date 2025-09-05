@@ -1,0 +1,15 @@
+# Acessando o Code::Blocks ou editor de texto para criar o arquivo .gitignore
+# Crie o arquivo e adicione o conteúdo abaixo:
+
+# Ignora todos os arquivos e pastas...
+*
+
+# ...exceto os arquivos .c
+!*.c
+
+# Mantém o .gitignore visível no repositório
+!.gitignore
+!exercícios
+!conceitos
+!projetos
+!.gitkeep
