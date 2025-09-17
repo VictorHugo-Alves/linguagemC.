@@ -12,23 +12,24 @@
 //
 //Para todos os outros números (os positivos), imprima uma mensagem dizendo que o número é válido.
 
+//TEM QUE FAZER AINDA
+
 #include <stdio.h>
 
 int main() {
-    int num1 = 0;
-    int num2;
-
-    while (num2 != 10) {
-        printf("Insira um número inteiro\n");
-        scanf(" %d\n",&num2);
-        if (num2) < 0 {
-            printf("Inválido, insira um número inteiro POSITIVO"));
+    float num;
+    while (1) {
+        printf("Insira um número inteiro positivo\n");
+        scanf("%f",&num);
+        if (num == 10) {
+            printf("Você encontrou o número, encerrando...\n");
+            break;
+        } else if (num < 0) {
+            printf("Inválido! Número POSITIVO\n");
             continue;
+        } else {
+            printf("Continue tentando.\n");
         }
-        printf("O número %d é válido",num2);
-    } printf("Número 10 encontrado");
-    return 0;
+
+    } return 0;
 }
-
-
-
